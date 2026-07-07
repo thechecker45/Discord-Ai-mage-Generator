@@ -1,26 +1,18 @@
-# ÖZELLİKLER
-* Free Api Key Kullanılması
-* Discord.js v14 Kullanılması
-* Mesajlara Emoji Koyularak Daha Renkli Görünmesi Sağlandı
-* Opensource Olması
+# Discord Yapay Zeka Resim Botu
 
-# Kullanım
-* Bu Komutu Kullanırken Eğer Promptu İngilizce Girerseniz Daha İyi Sonuç Alırsınız
-```
-!resimyap
-```
-* Örnek:
-```
-!resimyap streets of tokyo on a rainy day
-```
+Discord sunucunuzda tamamen ücretsiz bir API anahtarı ile gelişmiş görseller üretmenizi sağlayan, modern ve açık kaynaklı bir Discord botu.
 
-* Botun Tüm Komutlarına Erişmek İçin Şu Komutu Kullanın:
-```
+## 🚀 Öne Çıkan Özellikler
+
+* **Güncel Altyapı:** En son kararlılık güncellemelerine sahip **Discord.js v14** sürümüyle geliştirildi.
+* **Tamamen Ücretsiz:** Herhangi bir ücret ödemeden kendi API anahtarınızla hemen kullanmaya başlayabilirsiniz.
+* **Kullanıcı Dostu Arayüz:** Mesaj tepkileri ve renkli emojilerle zenginleştirilmiş, akıcı bir kullanıcı deneyimi.
+* **Açık Kaynak:** Kodu dilediğiniz gibi inceleyebilir, geliştirebilir ve kendi sunucunuza göre özelleştirebilirsiniz.
+
+---
+
+## 🛠️ Kullanım Rehberi
+
+Botun tüm yeteneklerini ve komut listesini görmek için aşağıdaki komutu kullanabilirsiniz:
+```text
 !yardım
-```
-
-* Otomatik Çeviri de Ekleyeceğim
-
-# Instagramım
-Herhangi Bir Soru Sormak İsterseniz:
-* [Instagramım](https://instagram.com/thechecker_45)
