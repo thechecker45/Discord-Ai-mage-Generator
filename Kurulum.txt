@@ -1,0 +1,61 @@
+======================================================================
+               🤖 YAPAY ZEKA RESİM OLUŞTURUCU BOT KURULUMU 🤖
+======================================================================
+
+Bu belgede, botun çalıştırılması için gerekli olan tüm adımlar sırasıyla 
+ve anlaşılır bir şekilde açıklanmıştır.
+
+----------------------------------------------------------------------
+BÖLÜM 1: Stable Horde API Anahtarı Alma (Resim Oluşturma İçin)
+----------------------------------------------------------------------
+1. https://stablehorde.net/ sitesine gidin.
+2. "Register An Account" kısmına tıklayın (https://stablehorde.net/register).
+3. Bir kullanıcı adı (Display Name) yazıp "Submit" butonuna basın.
+4. Karşınıza çıkan API Key değerini kopyalayıp bir kenara not edin.
+
+----------------------------------------------------------------------
+BÖLÜM 2: Discord Botu Oluşturma ve Yetkilendirme
+----------------------------------------------------------------------
+1. Discord Developer Portal'a gidin: https://discord.com/developers/applications
+2. Sağ üst köşedeki "New Application" butonuna tıklayın, botunuza bir ad verin
+   ve sözleşmeyi onaylayıp "Create" butonuna basın.
+3. Sol menüden "Bot" sekmesine tıklayın.
+4. "Reset Token" butonuna tıklayıp tokeninizi oluşturun ve kopyalayarak not edin.
+   (NOT: Bu tokeni kimseyle paylaşmayın!)
+5. Aynı sayfada aşağı kaydırarak "Privileged Gateway Intents" bölümünü bulun:
+   - Presence Intent: AÇIK
+   - Server Members Intent: AÇIK
+   - Message Content Intent: AÇIK (Çok Önemli!)
+   butonlarını aktif edip "Save Changes" deyin.
+6. Sol menüden "OAuth2" -> "URL Generator" sekmesine gidin.
+7. "Scopes" kısmından "bot" seçeneğini işaretleyin.
+8. Alt kısımda açılan "Bot Permissions" listesinden "Administrator" (Yönetici) seçeneğini işaretleyin.
+9. En altta üretilen "Generated URL" bağlantısını kopyalayın, tarayıcınızda açarak botu sunucunuza ekleyin.
+
+----------------------------------------------------------------------
+BÖLÜM 3: Konfigürasyon ve Ayarlar
+----------------------------------------------------------------------
+1. Klasörde bulunan "settings.json" dosyasını herhangi bir metin editörüyle açın.
+2. Ayarları aşağıdaki gibi düzenleyin ve dosyayı kaydedin:
+   {
+     "STABLE_HORDE_API_KEY": "1. Bölümde Aldığınız API Key",
+     "DISCORD_TOKEN": "2. Bölümde Aldığınız Bot Tokeni"
+   }
+   (NOT: bot.js ve server.js dosyalarında herhangi bir değişiklik yapmanıza gerek yoktur.)
+
+----------------------------------------------------------------------
+BÖLÜM 4: Kurulum ve Botu Çalıştırma
+----------------------------------------------------------------------
+1. "modulleriyukle.bat" dosyasını çalıştırarak gerekli kütüphanelerin yüklenmesini sağlayın.
+2. Yükleme tamamlanıp pencere kapandıktan sonra "calistir.bat" dosyasını çalıştırarak botu başlatın.
+3. Botunuz aktif olduğunda, eklediğiniz sunucuda "!yardım" yazarak komutları test edebilirsiniz.
+
+----------------------------------------------------------------------
+📝 Notlar & Bilgilendirme:
+- !resimyap komutu ile görseller oluşturabilirsiniz.
+- Botun hangi komutlarla kullanıldığını "log.txt" dosyasından takip edebilirsiniz.
+- Bot yanıtları modern gömülü (Embed) arayüze güncellenmiştir.
+
+======================================================================
+Geliştirici: TheChecker & Antigravity AI
+======================================================================
